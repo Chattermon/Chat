@@ -98,12 +98,14 @@
   <title>AnoChat</title>
 </head>
 <body>
-
-
   <div class="chat-container">
     <div class="members-count">Online: <span class="count">-</span></div>
     <div class="members-list">Members: <span class="list">-</span></div>
     <div class="messages"></div>
+    <form class="name-form" onsubmit="return false;">
+      <input class="name-form__input" placeholder="Type your name..." type="text"/>
+      <button class="name-form__button">Set Name</button>
+    </form>
     <form class="message-form" onsubmit="return false;">
       <input class="message-form__input" placeholder="Type a message..." type="text"/>
       <button class="message-form__button">Send</button>
