@@ -98,22 +98,20 @@
   <title>AnoChat</title>
 </head>
 <body>
-
-  <div class="navbar">
-    <a href="index.html">Global Chat</a>
-    <a href="login.html">Courses</a>
-    <a href="signup.html">UPCOMING TESTS</a>
-    <!-- Add more navigation links as needed -->
-  </div>
-
   <div class="chat-container">
     <div class="members-count">Online: <span class="count">-</span></div>
     <div class="members-list">Members: <span class="list">-</span></div>
-
-    <p>test</p>
-  
+    <div class="messages"></div>
+    <form class="name-form" onsubmit="return false;">
+      <input class="name-form__input" placeholder="Type your name..." type="text"/>
+      <button class="name-form__button">Set Name</button>
+    </form>
+    <form class="message-form" onsubmit="return false;">
+      <input class="message-form__input" placeholder="Type a message..." type="text"/>
+      <button class="message-form__button">Send</button>
     </form>
   </div>
   <script src="./script.js"></script>
 </body>
 </html>
+
