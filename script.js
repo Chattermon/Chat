@@ -1,20 +1,13 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'spMOdQSgMIxz0Oyd';
-let userName = '';
-document.querySelector('.name-form').addEventListener('submit', () => {
-  userName = document.querySelector('.name-form__input').value;
-});
-
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
-    name: userName,
+    name: getRandomName(),
     color: getRandomColor(),
   },
 });
-
-
 
 let members = [];
 
