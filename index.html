@@ -57,19 +57,6 @@
   font-size: 14px;
   border-radius: 3px;
 }
-.name-form {
-  display: flex;
-  padding: 10px;
-  border-top: 1px solid #ddd;
-}
-
-.name-form__input {
-  flex-grow: 1;
-  border: 1px solid #ddd;
-  padding: 8px;
-  font-size: 14px;
-  border-radius: 3px;
-}
 
     
 .message-form__button {
@@ -86,20 +73,7 @@
 .message-form__button:hover {
   background-color: #267bb5;
 }
-    .name-form__button {
-  margin-left: 10px;
-  padding: 8px 15px;
-  font-size: 14px;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
 
-.name-form__button:hover {
-  background-color: #267bb5;
-}
 
        .navbar {
       background-color: #333;
@@ -126,14 +100,12 @@
   <title>AnoChat</title>
 </head>
 <body>
+
+
   <div class="chat-container">
     <div class="members-count">Online: <span class="count">-</span></div>
     <div class="members-list">Members: <span class="list">-</span></div>
     <div class="messages"></div>
-    <form class="name-form" onsubmit="return false;">
-      <input class="name-form__input" placeholder="Type your name..." type="text"/>
-      <button class="name-form__button">Set Name</button>
-    </form>
     <form class="message-form" onsubmit="return false;">
       <input class="message-form__input" placeholder="Type a message..." type="text"/>
       <button class="message-form__button">Send</button>
